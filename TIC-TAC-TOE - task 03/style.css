@@ -1,0 +1,117 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+  }
+  
+  .game-container {
+    background-color: #1e1e1e;
+    padding: 20px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #00ffcc;
+    text-shadow: 0 0 10px #00ffcc;
+  }
+  
+  .game-options {
+    margin-bottom: 20px;
+  }
+  
+  #mode {
+    padding: 5px 10px;
+    margin-left: 10px;
+    border: 2px solid #00ffcc;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    color: #00ffcc;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  #mode:hover {
+    background-color: #00ffcc;
+    color: #1e1e1e;
+  }
+  
+  #restartBtn {
+    padding: 5px 15px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff4500;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  #restartBtn:hover {
+    background-color: #e03c31;
+    transform: scale(1.1);
+  }
+  
+  #status {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    height: 1.5em;
+    color: #00ffcc;
+    text-shadow: 0 0 10px #00ffcc;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    justify-content: center;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 10px;
+  }
+  
+  .cell:hover {
+    background-color: #555;
+    transform: scale(1.1);
+  }
+  
+  .cell.X {
+    color: #00ffcc;
+  }
+  
+  .cell.O {
+    color: #ff4500;
+  }
+  
+  .winner {
+    background-color: #00ffcc !important;
+    box-shadow: 0 0 20px #00ffcc;
+    transform: scale(1.1);
+  }
+  
